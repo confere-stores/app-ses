@@ -1,6 +1,6 @@
 {
-  "name": "app-ses",
-  "version": "0.5.40",
+  "name": "@confere-stores/app-ses",
+  "version": "0.5.41",
   "description": "E-Com Plus app for AWS SES as default email server",
   "main": "main.js",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ecomclub/app-ses.git"
+    "url": "git+https://github.com/confere-stores/app-ses.git"
   },
   "author": "Talisson Ferreira <talissonf@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ecomclub/app-ses/issues"
+    "url": "https://github.com/confere-stores/app-ses/issues"
   },
-  "homepage": "https://github.com/ecomclub/app-ses#readme",
+  "homepage": "https://github.com/confere-stores/app-ses#readme",
   "dependencies": {
     "@ecomplus/application-sdk": "^11.0.0-sqlite.1.13.1",
     "@confere-stores/transactional-mails": "^1.10.2",

@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.41](https://github.com/confere-stores/app-ses/compare/v0.5.40...v0.5.41) (2021-05-06)
+
+
+### Features
+
+* change to confere-stores ([f7b80ca](https://github.com/confere-stores/app-ses/commit/f7b80ca7fd1a29e0b2534595484827f3d4892dc8))
+
+
+### Bug Fixes
+
+* remove private from package ([380ad7e](https://github.com/confere-stores/app-ses/commit/380ad7ecfaeda86b2550c465043797b6e833c39f))
+
 ### [0.5.40](https://github.com/ecomclub/app-ses/compare/v0.5.39...v0.5.40) (2021-03-03)
 
 ### [0.5.39](https://github.com/ecomclub/app-ses/compare/v0.5.38...v0.5.39) (2021-03-03)
