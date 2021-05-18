@@ -1,16 +1,16 @@
 {
   "app_id": 1243,
   "state": "active",
-  "title": "E-mail gateway AWS SES",
+  "title": "[BETA] Sistema de emails da Confere Shop",
   "slug": "app-ses",
   "paid": false,
   "version": "0.5.21",
   "version_date": "2020-04-21T03:00:00.000Z",
   "type": "external",
-  "script_uri": "https://ses.ecomplus.biz/",
+  "script_uri": "https://mail-store.confere.com.br/",
   "status": "active",
   "authentication": true,
-  "auth_callback_uri": "https://ses.ecomplus.biz/ecom/auth-callback",
+  "auth_callback_uri": "https://mail-store.confere.com.br/ecom/auth-callback",
   "admin_settings": {
     "lojista_mail": {
       "schema": {
