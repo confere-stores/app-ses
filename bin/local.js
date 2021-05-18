@@ -3,7 +3,7 @@
 'use strict'
 
 // log on files
-const logger = require('console-files')
+const logger = console
 // handle app authentication to Store API
 // https://github.com/ecomclub/ecomplus-app-sdk
 const { ecomAuth } = require('@ecomplus/application-sdk')

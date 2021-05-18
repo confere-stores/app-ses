@@ -1,5 +1,5 @@
 'use strict'
-const logger = require('console-files')
+const logger = console
 const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database(process.env.ECOM_AUTH_DB)
 //

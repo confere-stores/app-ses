@@ -1,7 +1,7 @@
 'use strict'
 
 // log on files
-const logger = require('console-files')
+const logger = console
 // read configured E-Com Plus app data
 const getConfig = require(process.cwd() + '/lib/store-api/get-config')
 
