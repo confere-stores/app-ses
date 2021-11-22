@@ -3,7 +3,8 @@
 'use strict'
 
 // log on files
-const logger = console
+const logger = Object.assign({}, console)
+logger.log = (...rest) => console.log(`${(new Date()).toISOString()}: ${rest.join()}`)
 // handle app authentication to Store API
 // https://github.com/ecomclub/ecomplus-app-sdk
 const { ecomAuth } = require('@ecomplus/application-sdk')

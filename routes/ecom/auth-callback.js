@@ -1,7 +1,8 @@
 'use strict'
 
 // log on files
-const logger = console
+const logger = Object.assign({}, console)
+logger.log = (...rest) => console.log(`${(new Date()).toISOString()}: ${rest.join()}`)
 
 module.exports = appSdk => {
   return (req, res) => {

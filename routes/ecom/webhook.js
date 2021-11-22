@@ -1,7 +1,8 @@
 'use strict'
 
 // log on files
-const logger = console
+const logger = Object.assign({}, console)
+logger.log = (...rest) => console.log(`${(new Date()).toISOString()}: ${rest.join()}`)
 // read configured E-Com Plus app data
 const getConfig = require(process.cwd() + '/lib/store-api/get-config')
 
@@ -25,7 +26,7 @@ module.exports = appSdk => {
       .then(configObj => {
         /* Do the stuff */
         let { resource } = trigger
-        logger.log(`> Webhook (${trigger._id}) - ${(new Date()).toISOString()}: #${storeId} ${trigger.resource_id} [${resource}]`)
+        logger.log(`> Webhook (${trigger._id}): #${storeId} ${trigger.resource_id} [${resource}]`)
 
         switch (resource) {
           case 'carts': // abandoned cart
@@ -44,7 +45,7 @@ module.exports = appSdk => {
         }
 
         // all done
-        logger.log(`> Webhook (${trigger._id}) - ${(new Date()).toISOString()}: ${trigger.resource_id} - OK`)
+        logger.log(`> Webhook (${trigger._id}): ${trigger.resource_id} - OK`)
         res.send(ECHO_SUCCESS)
       })
 

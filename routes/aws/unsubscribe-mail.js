@@ -1,5 +1,6 @@
 const { decrypt } = require('./../../lib/unsubscribe-hash')
-const logger = console
+const logger = Object.assign({}, console)
+logger.log = (...rest) => console.log(`${(new Date()).toISOString()}: ${rest.join()}`)
 const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database(process.env.ECOM_AUTH_DB)
 
