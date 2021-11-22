@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/confere-stores/app-ses#readme",
   "dependencies": {
-    "@confere-stores/transactional-mails": "^1.11.1",
+    "@confere-stores/transactional-mails": "^1.11.2",
     "@ecomplus/application-sdk": "^11.0.0-sqlite.1.13.1",
     "aws-sdk": "^2.757.0",
     "body-parser": "^1.19.0",
